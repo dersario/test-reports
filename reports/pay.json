@@ -1,0 +1,32 @@
+[
+    {
+        "department": "Sales",
+        "name": "Karen White",
+        "payout": 8250
+    },
+    {
+        "department": "HR",
+        "name": "Liam Harris",
+        "payout": 6510
+    },
+    {
+        "department": "Sales",
+        "name": "Mia Young",
+        "payout": 5920
+    },
+    {
+        "department": "HR",
+        "name": "Grace Lee",
+        "payout": 7200
+    },
+    {
+        "department": "Marketing",
+        "name": "Henry Martin",
+        "payout": 5250
+    },
+    {
+        "department": "HR",
+        "name": "Ivy Clark",
+        "payout": 6004
+    }
+]

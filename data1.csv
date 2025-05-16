@@ -1,0 +1,23 @@
+id,email,name,department,hours_worked,hourly_rate
+1,alice@example.com,Alice Johnson,Marketing,160,50
+2,bob@example.com,Bob Smith,Design,150,40
+3,carol@example.com,Carol Williams,Design,170,60
+4,dave@example.com,Dave Brown,Engineering,145,55
+5,eve@example.com,Eve Davis,Sales,180,45
+6,frank@example.com,Frank Wilson,HR,155,35
+7,grace@example.com,Grace Moore,Engineering,165,70
+8,henry@example.com,Henry Taylor,Marketing,140,60
+9,ivy@example.com,Ivy Anderson,Design,175,50
+10,jack@example.com,Jack Thomas,Sales,160,40
+11,kate@example.com,Kate Jackson,HR,150,30
+12,leo@example.com,Leo White,Engineering,170,65
+13,mia@example.com,Mia Harris,Marketing,155,55
+14,nick@example.com,Nick Martin,Design,165,45
+15,olivia@example.com,Olivia Garcia,Sales,145,50
+16,paul@example.com,Paul Lee,HR,160,40
+17,quinn@example.com,Quinn Clark,Engineering,175,75
+18,rose@example.com,Rose Lewis,Marketing,150,60
+19,sam@example.com,Sam Walker,Design,140,55
+20,tina@example.com,Tina Hall,Sales,170,45
+21,uma@example.com,Uma Young,HR,165,35
+22,victor@example.com,Victor King,Engineering,160,80
