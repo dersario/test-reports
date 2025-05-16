@@ -10,25 +10,23 @@ parser.add_argument("--type", type=str, default="payout", help="type of report")
 
 my_args = parser.parse_args()
 files = my_args.files
-report = []
+
+
 rep = Report()
 columns = rep.standart_rate_name(open(files[0], "r").readline().rstrip().split(","))
-
-column_indexes = {column: i for i, column in enumerate(columns)}
 data = []
-
 for file in files:
     data.extend(rep.parse_data(file, columns))
+
 match my_args.type:
     case "payout":
         rep = PayoutReport()
     case "avg":
         rep = AvgRate()
 
-report.extend(
-    rep.create_report(data, column_indexes, "department", default_columns=True)
-)
 
+column_indexes = {column: i for i, column in enumerate(columns)}
+report = rep.create_report(data, column_indexes, "department", default_columns=True)
 
 with open(f"reports/{my_args.report}.json", "w") as file:
     file.write(json.dumps(report))
