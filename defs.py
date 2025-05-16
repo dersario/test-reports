@@ -8,6 +8,7 @@
                 return columns
             except ValueError:
                 continue
+        return columns
 
     def parse_data(self, path: str, columns_target: list[str]) -> list[list]:
         with open(path, "r") as file:
@@ -25,7 +26,13 @@
 
 
 class PayoutReport(Report):
-    def create_report(self, employees: list[list], indexes: dict, *args: str, default_columns: bool = False) -> list[dict]:
+    def create_report(
+        self,
+        employees: list[list],
+        indexes: dict,
+        *args: str,
+        default_columns: bool = False,
+    ) -> list[dict]:
         """print colums from payout report\n
         variants of columns:\n
             - id
@@ -66,5 +73,5 @@ class AvgRate(Report):
                 counts[department] = 1
         avg_rates = sum_rates.copy()
         for key in sum_rates.keys():
-            avg_rates[key] = round(avg_rates[key]/counts[key], 1)
+            avg_rates[key] = round(avg_rates[key] / counts[key], 1)
         return [avg_rates]
